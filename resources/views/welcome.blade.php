@@ -30,13 +30,14 @@
                     @endauth
                 </div>
             @endif
-            Route::get('halo', function () {
-                return "<h1>Halo, Selamat datang di tutorial laravel www.malasngoding.com</h1>";
-            });
 
-            Route::get('blog', function () {
-                return view('blog');
-            });
+                <?php
+                $nama = 'Doni' ;
+                echo 'Hallo Apa Kabar ' . $nama ; ?>
+                <br />
+                {{'ini dari Blade'}}
+
+
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
                     <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
