@@ -27,3 +27,49 @@ Route::get('halo', function () {
 Route::get('blog', function () {
 	return view('blog');
 });
+
+ //<!-- Portofolio Tugas PWEB -->
+
+Route::get('pertama', function () {
+	return view('pertama');
+});
+
+Route::get('specificity', function () {
+	return view('specificity');
+});
+
+Route::get('Center', function () {
+	return view('Center');
+});
+
+Route::get('bootstrap1', function () {
+	return view('bootstrap1');
+});
+
+Route::get('itstv', function () {
+	return view('fix');
+});
+
+Route::get('linktree', function () {
+	return view('humblezing');
+});
+
+Route::get('js1', function () {
+	return view('js1');
+});
+
+Route::get('validasi1', function () {
+	return view('validasi1');
+});
+
+Route::get('remake', function () {
+	return view('danantara');
+});
+
+Route::get('ujiantengahsemester', function () {
+	return view('ets');
+});
+
+Route::get('frontend', function () {
+	return view('frontend');
+});

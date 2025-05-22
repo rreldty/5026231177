@@ -1,0 +1,19 @@
+p{
+    color:pink;
+}
+
+*{
+    background-color:yellow;
+}
+
+p{
+    background-color:magenta;
+}
+
+.test{
+    color:blue;
+}
+
+#pweb{
+    color:green;
+}

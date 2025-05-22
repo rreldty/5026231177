@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomePage Teknisi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #E5E5E5;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            margin-right: 15px;
+        }
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .card-custom {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background: white;
+            font-size: 14px;
+        }
+        .card-custom img {
+            max-width: 100%;
+            height: auto;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background-color: #E5E5E5;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+        }
+        .status-rental {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header d-flex align-items-center">
+        <img src="logo.png" class="logo">
+        <h4 class="mb-0">HomePage Teknisi</h4>
+    </div>
+
+    <div class="container mt-3">
+        <!-- Alat yang sedang disewa -->
+        <h5 class="section-title">ALAT YANG SEDANG DISEWA</h5>
+        <div class="row">
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="cam1.png" class="img-fluid">
+                    <p>SONY Cinema Line</p>
+                    <small class="status-rental text-danger">🔴 Dipinjam</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="battery.jpg" class="img-fluid">
+                    <p>SONY NP-FZ100</p>
+                    <small class="status-rental text-danger">🔴 Dipinjam</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="lens1.jpg" class="img-fluid">
+                    <p>SONY FE 24-70mm</p>
+                    <small class="status-rental text-danger">🔴 Dipinjam</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="camera2.jpg" class="img-fluid">
+                    <p>Sony Maximum</p>
+                    <small class="status-rental text-danger">🔴 Dipinjam</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol -->
+        <button class="button">Cek Alat</button>
+
+        <!-- Menunggu Persetujuan -->
+        <h5 class="section-title">MENUNGGU PERSETUJUAN</h5>
+        <div class="row">
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="nikon.jpg" class="img-fluid">
+                    <p>Nikon D7500</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="lens2.jpg" class="img-fluid">
+                    <p>Canon Lens EFS 18-135mm</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="camcorder.jpg" class="img-fluid">
+                    <p>Sony PXW-Z90T</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="canon4000d.jpg" class="img-fluid">
+                    <p>Canon EOS 4000D</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="fujifilm.jpg" class="img-fluid">
+                    <p>Fujifilm XT-30</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="gopro.jpg" class="img-fluid">
+                    <p>GoPro Hero 11</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="panasonic.jpg" class="img-fluid">
+                    <p>Panasonic Lumix GH5</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+            <div class="col-3 mb-2">
+                <div class="card-custom">
+                    <img src="canon_m50.jpg" class="img-fluid">
+                    <p>Canon EOS M50</p>
+                    <small class="status-rental text-success">🟢 Diajukan</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
