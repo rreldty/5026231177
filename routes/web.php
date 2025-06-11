@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\CatController;
 
 
 //import java.io;
@@ -93,11 +94,31 @@ Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 // route pegawaiDB
-Route::get('/pegawai',[PegawaiDBController::class, 'index']);
-Route::get('/pegawai/tambah',[PegawaiDBController::class, 'tambah']);
-Route::get('/pegawai/store',[PegawaiDBController::class, 'store']); //jika form dikirim, ....
-Route::get('/pegawai/edit/(id)',[PegawaiDBController::class, 'edit']);
-Route::get('/pegawai/update',[PegawaiDBController::class, 'update']);
-Route::get('/pegawai/hapus/(id)',[PegawaiDBController::class, 'hapus']);
+Route::get('/pegawai', [PegawaiDBController::class, 'index']);
+Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);
+Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'edit']);
+Route::post('/pegawai/update', [PegawaiDBController::class, 'update']);
+Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
+Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
+
+// TUGAS CRUD route cat
+
+//Create Cat
+Route::get('/tugascrud/tambah', [CatController::class, 'create']);
+Route::post('/tugascrud/store', [CatController::class, 'store']);
+
+//Read Cat
+Route::get('/tugascrud', [CatController::class, 'read']);
+
+//Update Cat
+Route::get('/tugascrud/edit/{id}', [CatController::class, 'edit']);
+Route::post('/tugascrud/update', [CatController::class, 'update']);
+
+//Delete Cat
+Route::post('/tugascrud/delete/{id}', [CatController::class, 'delete']);
+
+//Search Cat
+Route::get('/tugascrud/cari', [CatController::class, 'cari']);
