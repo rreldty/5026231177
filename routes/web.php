@@ -6,6 +6,8 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\CatController;
+use App\Http\Controllers\KaryawanController;
+
 
 
 //import java.io;
@@ -122,3 +124,19 @@ Route::post('/tugascrud/delete/{id}', [CatController::class, 'delete']);
 
 //Search Cat
 Route::get('/tugascrud/cari', [CatController::class, 'cari']);
+
+// LATIHAN 1 - Karyawan CRUD
+
+//Create Karyawan
+Route::get('/latihan1/tambah', [KaryawanController::class, 'create']);
+Route::post('/latihan1/store', [KaryawanController::class, 'store']);
+
+//Read Karyawan
+Route::get('/latihan1', [KaryawanController::class, 'read']);
+
+//Update Karyawan
+Route::get('/latihan1/edit/{kodepegawai}', [KaryawanController::class, 'edit']);
+Route::post('/latihan1/update', [KaryawanController::class, 'update']);
+
+//Delete Karyawan
+Route::post('/latihan1/delete/{kodepegawai}', [KaryawanController::class, 'delete']);
