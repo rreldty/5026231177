@@ -7,6 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\CatController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\CountController;
+
 
 
 
@@ -90,12 +92,12 @@ Route::get('welcome', [DosenController::class, 'welcome']);
 Route::get('/formulir', [PegawaiController::class, 'formulir']);
 Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
 
-// route blog
+// route blog --------------------------------------------------------------------------
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
-// route pegawaiDB
+// route pegawaiDB --------------------------------------------------------------------------
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);
 Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
@@ -106,7 +108,7 @@ Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 
 Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
 
-// TUGAS CRUD route cat
+// TUGAS CRUD route cat --------------------------------------------------------------------------
 
 //Create Cat
 Route::get('/tugascrud/tambah', [CatController::class, 'create']);
@@ -125,7 +127,7 @@ Route::post('/tugascrud/delete/{id}', [CatController::class, 'delete']);
 //Search Cat
 Route::get('/tugascrud/cari', [CatController::class, 'cari']);
 
-// LATIHAN 1 - Karyawan CRUD
+// LATIHAN 1 - Karyawan CRUD NRP Ganjil --------------------------------------------------------------------------
 
 //Create Karyawan
 Route::get('/latihan1/tambah', [KaryawanController::class, 'create']);
@@ -140,3 +142,23 @@ Route::post('/latihan1/update', [KaryawanController::class, 'update']);
 
 //Delete Karyawan
 Route::post('/latihan1/delete/{kodepegawai}', [KaryawanController::class, 'delete']);
+
+// LATIHAN 2 - Karyawan CRUD NRP Genap --------------------------------------------------------------------------
+
+//Create Karyawan
+Route::get('/latihan2/tambah', [KaryawanController::class, 'create']);
+Route::post('/latihan2/store', [KaryawanController::class, 'store']);
+
+//Read Karyawan
+Route::get('/latihan2', [KaryawanController::class, 'read']);
+
+//Update Karyawan
+Route::get('/latihan2/edit/{kodepegawai}', [KaryawanController::class, 'edit']);
+Route::post('/latihan2/update', [KaryawanController::class, 'update']);
+
+//Delete Karyawan
+Route::post('/latihan2/delete/{kodepegawai}', [KaryawanController::class, 'delete']);
+
+// LATIHAN 3 - Karyawan CRUD Mahasiswa Perempuan --------------------------------------------------------------------------
+
+Route::get('/latihan3', [CountController::class, 'index']);

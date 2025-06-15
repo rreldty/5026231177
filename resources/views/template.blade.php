@@ -122,8 +122,8 @@
         <a href="/tugascrud"><i class="fas fa-tasks"></i> Tugas CRUD</a>
         <a href="#"><i class="fas fa-file-alt"></i> EAS</a>
         <a href="/latihan1"><i class="fas fa-pen-nib"></i> Latihan 1</a>
-        <a href="#"><i class="fas fa-cubes"></i> Latihan 2</a>
-        <a href="#"><i class="fas fa-vials"></i> Latihan 3</a>
+        <a href="/latihan2"><i class="fas fa-cubes"></i> Latihan 2</a>
+        <a href="/latihan3"><i class="fas fa-vials"></i> Latihan 3</a>
     </nav>
 
     <!-- Konten -->
