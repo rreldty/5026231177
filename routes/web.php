@@ -8,6 +8,9 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\CatController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\CountController;
+use App\Http\Controllers\NilaiController;
+
+
 
 
 
@@ -162,3 +165,12 @@ Route::post('/latihan2/delete/{kodepegawai}', [KaryawanController::class, 'delet
 // LATIHAN 3 - Karyawan CRUD Mahasiswa Perempuan --------------------------------------------------------------------------
 
 Route::get('/latihan3', [CountController::class, 'index']);
+
+// EAS - KODE SOAL NILAI --------------------------------------------------------------------------
+
+//View Nilai
+Route::get('/eas', [NilaiController::class, 'index']);
+
+//Tambah Nilai
+Route::get('/eas/tambah', [NilaiController::class, 'tambah']);
+Route::post('/eas/store', [NilaiController::class, 'store']);
